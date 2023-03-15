@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Desktop First Flexbox</title>
+        <meta name="viewport" content="width=device-wdith, initial-scale=1" />
+
+        <style>
+            .row {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .row-static {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .col {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .square {
+                background-color: orange;
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+            }
+
+            /* turn all rows into columns for the mobile layout */
+            @media (max-width: 500px) {
+                .row {
+                    flex-direction: column;
+                }
+            } 
+        </style>
+    </head>
+
+    <body>
+        <h1>Responsive Flex</h1>
+        <div class="row">
+            <div class="square">0</div>
+            <div class="square">1</div>
+            <div class="square">2</div>
+            <div class="square">3</div>
+            <div class="square">4</div>
+        </div>
+
+        <div class="row">
+            <div class="square">0</div>
+            <div class="square">1</div>
+            <div class="square">2</div>
+            <div class="square">3</div>
+            <div class="square">4</div>
+        </div>
+    </body>
+</html>
